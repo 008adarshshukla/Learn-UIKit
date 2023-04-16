@@ -20,7 +20,7 @@ class ImageViewController: UIViewController {
         
         //programmatic Image View.
         let programmaticImageView = UIImageView()
-        programmaticImageView.frame = CGRect(x: 62, y: 400, width: 250, height: 250)
+        programmaticImageView.frame = CGRect(x: 62, y: 400, width: 100, height: 100)
         programmaticImageView.image = eiffelImage2
         
         //It is used to set an alternate image to be displayed when the image view is highlighted.
@@ -45,6 +45,15 @@ class ImageViewController: UIViewController {
         } else {
             printContent("Not animating.")
         }
+        
+        //loading picture from url
+        let url = URL(string: "https://www.reuters.com/resizer/wDVrNwoT7EZMHbXBsyH4pnX2qqk=/1080x1350/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/AHF2FYISNJO55J6N35YJBZ2JYY.jpg")!
+        let data = try? Data(contentsOf: url)
+        let imageFromUrl = UIImage(data: data!)!
+        let webImageView = UIImageView(frame: CGRect(x: 62, y: 550, width: 200, height: 200))
+        webImageView.image = imageFromUrl
+        webImageView.backgroundColor = .black
+        self.view.addSubview(webImageView)
         
     }
 }
