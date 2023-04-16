@@ -61,6 +61,9 @@ class TextFieldViewController: ViewController {
         programmaticTextField.addTarget(self, action: #selector(editingEnded), for: .editingDidEnd)
         programmaticTextField.addTarget(self, action: #selector(editingEndedOnExit), for: .editingDidEndOnExit)
         
+        //setting the delegate
+        programmaticTextField.delegate = self
+        
         
         self.view.addSubview(programmaticTextField)
         
@@ -104,6 +107,59 @@ class TextFieldViewController: ViewController {
         programmaticTextField.text = ""
     }
     
+}
+
+//MARK: Delegate Methods
+extension TextFieldViewController: UITextFieldDelegate {
+    
+//    This function is called when the user begins editing the text field. You can use this function to perform any actions before the editing process begins.
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        print("should begin editing")
+        return true
+    }
+    
+    // This function is called after the text field becomes the first responder. You can use this function to perform any actions after the editing process begins.
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("did begin editing.")
+    }
+    
+    //This function is called when the user finishes editing the text field. You can use this function to validate the input or perform any other actions before the text field resigns as first responder.
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        print("should end editing")
+        return true
+    }
+    
+    //This function is called after the text field resigns as first responder. You can use this function to perform any actions after the editing process ends.
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("did end editing.")
+    }
+    
+    //if implemented, called in place of textFieldDidEndEditing:
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        if reason == .committed {
+            print("did end editing with reason.")
+        }
+    }
+    //This function is called every time the user types a new character into the text field. You can use this function to control which characters are allowed in the text field or to perform any other actions as the user types.
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("-----\(textField.text ?? "")")
+        return true
+    }
+    
+    //This function is called when the user taps the clear button in the text field. You can use this function to perform any actions before the text field is cleared.
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        print("clear button pressed")
+        return true
+    }
+    
+    //This function is called when the user taps the return key on the keyboard. You can use this function to dismiss the keyboard or perform any other actions that should happen when the user is finished editing the text field.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("return button pressed on keypad")
+        
+        //to dismiss the keypad
+        textField.endEditing(true)
+        return true
+    }
 }
 
 
