@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0212F06F29EAE6450071A8C1 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F06E29EAE6450071A8C1 /* TextFieldViewController.swift */; };
 		0263B17A29E9A0AD0057BFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17929E9A0AD0057BFFA /* AppDelegate.swift */; };
 		0263B17C29E9A0AD0057BFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17B29E9A0AD0057BFFA /* SceneDelegate.swift */; };
 		0263B17E29E9A0AD0057BFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17D29E9A0AD0057BFFA /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0212F06E29EAE6450071A8C1 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		0263B17629E9A0AD0057BFFA /* LearnUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0263B17929E9A0AD0057BFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0263B17B29E9A0AD0057BFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				0263B18729E9A0AF0057BFFA /* Info.plist */,
 				0263B18D29E9C75B0057BFFA /* LabelViewController.swift */,
 				027924B929EA632600587C73 /* ButtonViewController.swift */,
+				0212F06E29EAE6450071A8C1 /* TextFieldViewController.swift */,
 			);
 			path = LearnUIKit;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				0263B17E29E9A0AD0057BFFA /* ViewController.swift in Sources */,
 				0263B17A29E9A0AD0057BFFA /* AppDelegate.swift in Sources */,
+				0212F06F29EAE6450071A8C1 /* TextFieldViewController.swift in Sources */,
 				0263B17C29E9A0AD0057BFFA /* SceneDelegate.swift in Sources */,
 				027924BA29EA632600587C73 /* ButtonViewController.swift in Sources */,
 				0263B18E29E9C75B0057BFFA /* LabelViewController.swift in Sources */,
