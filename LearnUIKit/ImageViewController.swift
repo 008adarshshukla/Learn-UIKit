@@ -47,14 +47,30 @@ class ImageViewController: UIViewController {
         }
         
         //loading picture from url
-        let url = URL(string: "https://www.reuters.com/resizer/wDVrNwoT7EZMHbXBsyH4pnX2qqk=/1080x1350/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/AHF2FYISNJO55J6N35YJBZ2JYY.jpg")!
-        let data = try? Data(contentsOf: url)
-        let imageFromUrl = UIImage(data: data!)!
         let webImageView = UIImageView(frame: CGRect(x: 62, y: 550, width: 200, height: 200))
-        webImageView.image = imageFromUrl
-        webImageView.backgroundColor = .black
+        Task {
+            do {
+                webImageView.image = try await loadImage()
+            } catch {
+                print("error")
+            }
+        }
         self.view.addSubview(webImageView)
         
+    }
+    
+    func loadImage() async throws -> UIImage {
+        guard let url = URL(string: "https://www.reuters.com/resizer/wDVrNwoT7EZMHbXBsyH4pnX2qqk=/1080x1350/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/AHF2FYISNJO55J6N35YJBZ2JYY.jpg") else {
+            throw URLError(.badURL)
+        }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        guard let image = UIImage(data: data) else {
+            throw URLError(.badServerResponse)
+        }
+        
+        return image
     }
 }
 
