@@ -51,6 +51,7 @@ class ImageViewController: UIViewController {
         Task {
             do {
                 webImageView.image = try await loadImage()
+                print("moved to next line")
             } catch {
                 print("error")
             }
@@ -69,7 +70,7 @@ class ImageViewController: UIViewController {
         guard let image = UIImage(data: data) else {
             throw URLError(.badServerResponse)
         }
-        
+        print("image fetched")
         return image
     }
 }
