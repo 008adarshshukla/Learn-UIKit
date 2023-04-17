@@ -11,18 +11,30 @@ class ViewController: UIViewController {
 
     //first load function.
     //this function loads when the view controller is shown to the user
+    
+    var programmaticView: UIView!
+    var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        print("viewWillAppear")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        print("viewDidAppear")
+        
+        //UIView programmatically.
+        let frame = CGRect(x: 20, y: 150, width: self.view.frame.width - 40, height: 300)
+        programmaticView = UIView(frame: frame)
+        programmaticView.backgroundColor = .cyan
+        programmaticView.layer.cornerRadius = 10
+        
+        self.view.addSubview(programmaticView)
+        
+        
+        let eiffelImage1 = UIImage(named: "EiffelTower.jpg")!
+        imageView = UIImageView()
+        imageView.frame = CGRect(x: 20, y: 30, width: programmaticView.frame.width - 40, height: 240)
+        imageView.image = eiffelImage1
+
+        programmaticView.addSubview(imageView)
+        
+        //adding 
     }
 }
 
