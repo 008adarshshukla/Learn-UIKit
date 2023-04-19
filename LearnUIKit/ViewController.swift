@@ -34,7 +34,6 @@ class ViewController: UIViewController {
 
         programmaticView.addSubview(imageView)
         
-        //adding 
     }
 }
 
