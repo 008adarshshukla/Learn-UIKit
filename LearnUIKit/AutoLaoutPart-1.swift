@@ -8,22 +8,70 @@
 import UIKit
 
 class AutoLayout1: UIViewController {
+    
+    //creating image view.
+    let imageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "Page1"))
+        imageView.contentMode = .scaleAspectFit
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    //creating the textView
+    let descriptionTextView: UITextView = {
+        let textView = UITextView()
+        textView.text = "Join us today in our fun and games!"
+        textView.font = UIFont.boldSystemFont(ofSize: 18)
+        textView.textAlignment = .center
+        textView.isEditable = false
+        textView.isScrollEnabled = false
+        
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        return textView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imageView = UIImageView(image: UIImage(named: "EiffelTower"))
-        self.view.addSubview(imageView)
+        //adding imageView to View.
+        //self.view.addSubview(imageView)
         
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        //adding descriptionTextView to View
+        self.view.addSubview(descriptionTextView)
+        
+        //setting up the layout for the imageView.
+        setupImageViewLayout()
+        
+    }
+    
+    //layout for the imageView.
+    //What we want is that the image view must appear on the top half of the upper view.
+    private func setupImageViewLayout() {
+        
+        let upperView = UIView()
+        view.addSubview(upperView)
+        upperView.translatesAutoresizingMaskIntoConstraints = false
+        upperView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        upperView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        upperView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        upperView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        
+        upperView.addSubview(imageView)
         
         //anchoring the horizontal center of the imageView to horizontal center of parent view.
-        imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        //anchoring the vertical center of the imageView to vertical center of parent view.
-        imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        //specifying the width and height anchor
-        imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.centerXAnchor.constraint(equalTo:upperView.centerXAnchor).isActive = true
+        //anchoring the vertical center of the imageView to vartical center of parent view.
+        imageView.centerYAnchor.constraint(equalTo:upperView.centerYAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: upperView.heightAnchor, multiplier: 0.6).isActive = true
+        
+        descriptionTextView.topAnchor.constraint(equalTo: upperView.bottomAnchor).isActive = true
+        descriptionTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        descriptionTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
+    
+
 }
 
 /*
