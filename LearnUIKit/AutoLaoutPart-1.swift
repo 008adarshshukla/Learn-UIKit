@@ -21,8 +21,9 @@ class AutoLayout1: UIViewController {
     //creating the textView
     let descriptionTextView: UITextView = {
         let textView = UITextView()
-        textView.text = "Join us today in our fun and games!"
-        textView.font = UIFont.boldSystemFont(ofSize: 18)
+        let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games!", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+        textView.attributedText = attributedText
         textView.textAlignment = .center
         textView.isEditable = false
         textView.isScrollEnabled = false
@@ -66,8 +67,8 @@ class AutoLayout1: UIViewController {
         imageView.heightAnchor.constraint(equalTo: upperView.heightAnchor, multiplier: 0.6).isActive = true
         
         descriptionTextView.topAnchor.constraint(equalTo: upperView.bottomAnchor).isActive = true
-        descriptionTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        descriptionTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        descriptionTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
+        descriptionTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
         descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
     
