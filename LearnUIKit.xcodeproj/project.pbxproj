@@ -11,6 +11,7 @@
 		0212F07129EC38510071A8C1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F07029EC38510071A8C1 /* ImageViewController.swift */; };
 		0212F07329EC67360071A8C1 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F07229EC67360071A8C1 /* ScrollViewController.swift */; };
 		0212F07529ED8A780071A8C1 /* NavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F07429ED8A780071A8C1 /* NavigationBarViewController.swift */; };
+		022718FA29F0FBD2002F739D /* AutoLaoutPart-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022718F929F0FBD2002F739D /* AutoLaoutPart-1.swift */; };
 		0263B17A29E9A0AD0057BFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17929E9A0AD0057BFFA /* AppDelegate.swift */; };
 		0263B17C29E9A0AD0057BFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17B29E9A0AD0057BFFA /* SceneDelegate.swift */; };
 		0263B17E29E9A0AD0057BFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17D29E9A0AD0057BFFA /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		0212F07029EC38510071A8C1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		0212F07229EC67360071A8C1 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		0212F07429ED8A780071A8C1 /* NavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewController.swift; sourceTree = "<group>"; };
+		022718F929F0FBD2002F739D /* AutoLaoutPart-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoLaoutPart-1.swift"; sourceTree = "<group>"; };
 		0263B17629E9A0AD0057BFFA /* LearnUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0263B17929E9A0AD0057BFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0263B17B29E9A0AD0057BFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				0212F07029EC38510071A8C1 /* ImageViewController.swift */,
 				0212F07229EC67360071A8C1 /* ScrollViewController.swift */,
 				0212F07429ED8A780071A8C1 /* NavigationBarViewController.swift */,
+				022718F929F0FBD2002F739D /* AutoLaoutPart-1.swift */,
 			);
 			path = LearnUIKit;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				0263B17A29E9A0AD0057BFFA /* AppDelegate.swift in Sources */,
 				0212F06F29EAE6450071A8C1 /* TextFieldViewController.swift in Sources */,
 				0212F07329EC67360071A8C1 /* ScrollViewController.swift in Sources */,
+				022718FA29F0FBD2002F739D /* AutoLaoutPart-1.swift in Sources */,
 				0212F07129EC38510071A8C1 /* ImageViewController.swift in Sources */,
 				0263B17C29E9A0AD0057BFFA /* SceneDelegate.swift in Sources */,
 				027924BA29EA632600587C73 /* ButtonViewController.swift in Sources */,
