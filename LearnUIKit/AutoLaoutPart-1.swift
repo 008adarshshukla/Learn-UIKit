@@ -10,7 +10,7 @@ import UIKit
 class AutoLayout1: UIViewController {
     
     //creating image view.
-    let imageView: UIImageView = {
+    private let imageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "Page1"))
         imageView.contentMode = .scaleAspectFit
         
@@ -19,7 +19,7 @@ class AutoLayout1: UIViewController {
     }()
     
     //creating the textView
-    let descriptionTextView: UITextView = {
+    private let descriptionTextView: UITextView = {
         let textView = UITextView()
         let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games!", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
         attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
@@ -32,21 +32,30 @@ class AutoLayout1: UIViewController {
         return textView
     }()
     
+    //previousButton
+    private let previousButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Prev", for: .normal)
+        button.backgroundColor = .cyan
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //adding imageView to View.
-        //self.view.addSubview(imageView)
-        
-        //adding descriptionTextView to View
+    
         self.view.addSubview(descriptionTextView)
         
         //setting up the layout for the imageView.
         setupImageViewLayout()
         
+        //setting up bottom controls
+        setUpBottomControls()
+        
     }
     
-    //layout for the imageView.
+    //layout for the imageView and descriptionTextView
     //What we want is that the image view must appear on the top half of the upper view.
     private func setupImageViewLayout() {
         
@@ -72,7 +81,15 @@ class AutoLayout1: UIViewController {
         descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
     
-
+    func setUpBottomControls() {
+        view.addSubview(previousButton)
+        
+        previousButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
+        previousButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        //previousButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.25).isActive = true
+        //previousButton.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25).isActive = true
+    }
+    
 }
 
 /*

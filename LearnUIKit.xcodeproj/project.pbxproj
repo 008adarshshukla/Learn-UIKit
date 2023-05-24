@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02034BFD2A1E54CC00408FC6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02034BFC2A1E54CC00408FC6 /* NavigationController.swift */; };
 		0212F06F29EAE6450071A8C1 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F06E29EAE6450071A8C1 /* TextFieldViewController.swift */; };
 		0212F07129EC38510071A8C1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F07029EC38510071A8C1 /* ImageViewController.swift */; };
 		0212F07329EC67360071A8C1 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F07229EC67360071A8C1 /* ScrollViewController.swift */; };
 		0212F07529ED8A780071A8C1 /* NavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F07429ED8A780071A8C1 /* NavigationBarViewController.swift */; };
 		022718FA29F0FBD2002F739D /* AutoLaoutPart-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022718F929F0FBD2002F739D /* AutoLaoutPart-1.swift */; };
+		024A41E82A1B880600DE1266 /* ModalSegueFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A41E72A1B880600DE1266 /* ModalSegueFirstViewController.swift */; };
+		024A41EA2A1B888200DE1266 /* ModalSegueSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A41E92A1B888200DE1266 /* ModalSegueSecondViewController.swift */; };
+		024A41FE2A1CEBE400DE1266 /* FirstNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A41FD2A1CEBE400DE1266 /* FirstNavViewController.swift */; };
+		024A42002A1D2AFD00DE1266 /* SecondNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A41FF2A1D2AFD00DE1266 /* SecondNavViewController.swift */; };
 		0263B17A29E9A0AD0057BFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17929E9A0AD0057BFFA /* AppDelegate.swift */; };
 		0263B17C29E9A0AD0057BFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17B29E9A0AD0057BFFA /* SceneDelegate.swift */; };
 		0263B17E29E9A0AD0057BFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B17D29E9A0AD0057BFFA /* ViewController.swift */; };
@@ -20,14 +25,20 @@
 		0263B18629E9A0AF0057BFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0263B18429E9A0AF0057BFFA /* LaunchScreen.storyboard */; };
 		0263B18E29E9C75B0057BFFA /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B18D29E9C75B0057BFFA /* LabelViewController.swift */; };
 		027924BA29EA632600587C73 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027924B929EA632600587C73 /* ButtonViewController.swift */; };
+		02CBB9AD2A1DE82600B0D1B3 /* ThirdNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CBB9AC2A1DE82600B0D1B3 /* ThirdNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02034BFC2A1E54CC00408FC6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		0212F06E29EAE6450071A8C1 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		0212F07029EC38510071A8C1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		0212F07229EC67360071A8C1 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		0212F07429ED8A780071A8C1 /* NavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewController.swift; sourceTree = "<group>"; };
 		022718F929F0FBD2002F739D /* AutoLaoutPart-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoLaoutPart-1.swift"; sourceTree = "<group>"; };
+		024A41E72A1B880600DE1266 /* ModalSegueFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSegueFirstViewController.swift; sourceTree = "<group>"; };
+		024A41E92A1B888200DE1266 /* ModalSegueSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSegueSecondViewController.swift; sourceTree = "<group>"; };
+		024A41FD2A1CEBE400DE1266 /* FirstNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavViewController.swift; sourceTree = "<group>"; };
+		024A41FF2A1D2AFD00DE1266 /* SecondNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavViewController.swift; sourceTree = "<group>"; };
 		0263B17629E9A0AD0057BFFA /* LearnUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0263B17929E9A0AD0057BFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0263B17B29E9A0AD0057BFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 		0263B18729E9A0AF0057BFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0263B18D29E9C75B0057BFFA /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		027924B929EA632600587C73 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		02CBB9AC2A1DE82600B0D1B3 /* ThirdNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,12 @@
 				0212F07229EC67360071A8C1 /* ScrollViewController.swift */,
 				0212F07429ED8A780071A8C1 /* NavigationBarViewController.swift */,
 				022718F929F0FBD2002F739D /* AutoLaoutPart-1.swift */,
+				024A41E72A1B880600DE1266 /* ModalSegueFirstViewController.swift */,
+				024A41E92A1B888200DE1266 /* ModalSegueSecondViewController.swift */,
+				024A41FD2A1CEBE400DE1266 /* FirstNavViewController.swift */,
+				024A41FF2A1D2AFD00DE1266 /* SecondNavViewController.swift */,
+				02CBB9AC2A1DE82600B0D1B3 /* ThirdNavViewController.swift */,
+				02034BFC2A1E54CC00408FC6 /* NavigationController.swift */,
 			);
 			path = LearnUIKit;
 			sourceTree = "<group>";
@@ -161,14 +179,20 @@
 			files = (
 				0263B17E29E9A0AD0057BFFA /* ViewController.swift in Sources */,
 				0212F07529ED8A780071A8C1 /* NavigationBarViewController.swift in Sources */,
+				024A41FE2A1CEBE400DE1266 /* FirstNavViewController.swift in Sources */,
 				0263B17A29E9A0AD0057BFFA /* AppDelegate.swift in Sources */,
+				024A42002A1D2AFD00DE1266 /* SecondNavViewController.swift in Sources */,
 				0212F06F29EAE6450071A8C1 /* TextFieldViewController.swift in Sources */,
 				0212F07329EC67360071A8C1 /* ScrollViewController.swift in Sources */,
+				024A41E82A1B880600DE1266 /* ModalSegueFirstViewController.swift in Sources */,
 				022718FA29F0FBD2002F739D /* AutoLaoutPart-1.swift in Sources */,
+				02034BFD2A1E54CC00408FC6 /* NavigationController.swift in Sources */,
 				0212F07129EC38510071A8C1 /* ImageViewController.swift in Sources */,
+				024A41EA2A1B888200DE1266 /* ModalSegueSecondViewController.swift in Sources */,
 				0263B17C29E9A0AD0057BFFA /* SceneDelegate.swift in Sources */,
 				027924BA29EA632600587C73 /* ButtonViewController.swift in Sources */,
 				0263B18E29E9C75B0057BFFA /* LabelViewController.swift in Sources */,
+				02CBB9AD2A1DE82600B0D1B3 /* ThirdNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
